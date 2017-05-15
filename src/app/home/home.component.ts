@@ -3,18 +3,17 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../shared/data.service';
 
 @Component({
-    moduleId: module.id,
-    selector: 'home',
-    templateUrl: 'home.component.html'
+  moduleId: module.id,
+  selector: 'home',
+  templateUrl: 'home.component.html'
 })
 export class HomeComponent implements OnInit {
-    
-    projectName: string;
 
-    constructor(private dataService: DataService) { }
+  public projectName: string;
 
-    ngOnInit() { 
-        this.projectName = this.dataService.getProjectName();
-    }
+  constructor(private dataService: DataService) { }
 
+  public ngOnInit() {
+    this.projectName = this.dataService.getProjectName();
+  }
 }

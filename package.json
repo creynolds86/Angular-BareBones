@@ -1,41 +1,43 @@
 {
-    "name": "angular2-barebones",
-    "author": "Dan Wahlin",
-    "version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/danwahlin/angular2-barebones"
-    },
-    "scripts": {
-        "tsc": "tsc",
-        "tsc:w": "tsc -w",
-        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
-    },
-    "license": "ISC",
-    "dependencies": {
-        "@angular/common": "4.0.0",
-        "@angular/compiler": "4.0.0",
-        "@angular/core": "4.0.0",
-        "@angular/forms": "4.0.0",
-        "@angular/http": "4.0.0",
-        "@angular/platform-browser": "4.0.0",
-        "@angular/platform-browser-dynamic": "4.0.0",
-        "@angular/router": "4.0.0",
-        "@angular/upgrade": "4.0.0",
-        "@angular/compiler-cli": "4.0.0",
-        "@angular/platform-server": "4.0.0",
-        "@angular/tsc-wrapped": "4.0.0",
-        "@angular/animations": "4.0.0",
-
-        "systemjs": "0.19.47",
-        "core-js": "2.4.1",
-        "rxjs": "5.2.0",
-        "zone.js": "0.8.5"
-    },
-    "devDependencies": {
-        "concurrently": "3.4.0",
-        "lite-server": "2.3.0",
-        "typescript": "2.2.1",
-        "@types/node": "7.0.11"
-    }
+  "name": "angular2-wowapiapp",
+  "author": "Chris Reynolds",
+  "version": "0.0.1",
+  "description": "A sandbox angular 2 app for wow realted APIs. Based off of \"angular2-barebones\" by Dan Wahlin.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danwahlin/angular2-barebones"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "start": "tsc && npm run lint:ts && concurrently \"tsc -w\" \"lite-server\"",
+    "lint:ts": "node node_modules/tslint/bin/tslint --c ./tslint.json src/**/*.ts"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "4.0.0",
+    "@angular/common": "4.0.0",
+    "@angular/compiler": "4.0.0",
+    "@angular/compiler-cli": "4.0.0",
+    "@angular/core": "4.0.0",
+    "@angular/forms": "4.0.0",
+    "@angular/http": "4.0.0",
+    "@angular/platform-browser": "4.0.0",
+    "@angular/platform-browser-dynamic": "4.0.0",
+    "@angular/platform-server": "4.0.0",
+    "@angular/router": "4.0.0",
+    "@angular/tsc-wrapped": "4.0.0",
+    "@angular/upgrade": "4.0.0",
+    "core-js": "2.4.1",
+    "rxjs": "5.2.0",
+    "systemjs": "0.19.47",
+    "zone.js": "0.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "7.0.11",
+    "concurrently": "3.4.0",
+    "lite-server": "2.3.0",
+    "tslint": "^5.2.0",
+    "typescript": "2.2.1"
+  }
 }
