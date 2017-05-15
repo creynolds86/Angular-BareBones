@@ -1,7 +1,11 @@
-<h2>{{ projectName }} Project Loaded!</h2>
+<h2>Warcraft logs API</h2>
 <br />
-<a routerLink="/feature" class="btn btn-default">Navigate to application "feature"</a>
-<br />
-<br />
-<br />
-You can get my <a href="https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets" target="_blank">Angular (v2+) snippets</a> for the VS Code editor <a href="https://marketplace.visualstudio.com/items?itemName=danwahlin.angular2-snippets" target="_blank">here</a>.
+
+<div class="panel panel-default" *ngFor="let fight of characterParses">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ fight.name }}</h3>
+  </div>
+  <div class="panel-body">
+    {{ fight.specs.data }}
+  </div>
+</div>

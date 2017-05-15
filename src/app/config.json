@@ -1,5 +1,13 @@
 {
-  "apiKeys": {
-    "warcraftLogs": "eccbf492e153cffbdd635652a9c607c1"
+  "apis": {
+    "warcraftLogs": {
+      "endpoint": "https://www.warcraftlogs.com:443/v1",
+      "key" : "eccbf492e153cffbdd635652a9c607c1"
+    }
+  },
+  "guild": {
+    "name": "Wild Cards Guild",
+    "realm": "draenor",
+    "region": "eu"
   }
 }

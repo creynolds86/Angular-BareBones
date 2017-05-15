@@ -11,7 +11,8 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "start": "tsc && npm run lint:ts && concurrently \"tsc -w\" \"lite-server\"",
-    "lint:ts": "node node_modules/tslint/bin/tslint --c ./tslint.json src/**/*.ts"
+    "lint:ts": "node node_modules/tslint/bin/tslint --c ./tslint.json src/**/*.ts",
+    "postinstall": "npm install typings --global"
   },
   "license": "ISC",
   "dependencies": {
@@ -28,6 +29,7 @@
     "@angular/router": "4.0.0",
     "@angular/tsc-wrapped": "4.0.0",
     "@angular/upgrade": "4.0.0",
+    "@types/lodash": "^4.14.64",
     "core-js": "2.4.1",
     "rxjs": "5.2.0",
     "systemjs": "0.19.47",
